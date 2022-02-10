@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<style>
+body{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.main{background-image: url(backgroundphoto3.png);
+position:fixed; top:0; left:0; bottom:0; right:0;color:#ffffff; overflow-y:scroll; font-size:20px;}
+.main::after {content: ""; background-color: rgb(0,0,0,.3);position:fixed; top:0; left:0; bottom:0; right:0;}
+
+.main>h1,
+.main>p{text-align:center;
+     font-family:35px; z-index:2;
+      position:relative;}
+.main-content{background-color:rgb(27, 27, 50, .5);
+     max-width:8000px; display:flex;
+     flex-direction:column;
+      padding:40px;margin:0 auto;
+       margin-bottom:40px;
+        border-radius:5px;
+         z-index:2;
+          position:relative; 
+          box-shadow:0px -1px 10px 5px purple;}
+
+#name, #birth, #number, #email, #comment, #gender{display:block;
+     width:100%; 
+      height:35px;padding:5px 10px; 
+      color:#000000;
+      background-color:#ffffff;
+      border:1px solid #eeeeee;
+       border-radius:5px; font-size:20px;
+        margin-bottom:40px;}
+        label[for=name]
+        label[for=birth]
+        label[for=number]
+        label[for=email]{
+            margin-bottom:10px;
+            display:inline-block;
+        }
+        #social, #search, #friend, fieldset input
+        {height:20px;
+        width:20px;
+    margin-right:15px;
+margin-bottom:15px;}
+#comment{min-height:100px;}
+
+label[for=comment]{margin-top:30px;}
+
+#claim{
+    display:block;
+    width:100%;
+    padding:12px;
+    background:green;
+    border-radius:2px;
+    cursor:pointer;
+    border:0;
+    color:#ffffff;
+    font-size:20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<html>
+    <body>
+<div class="main">
+    <h1 id="title">Best Digital Parental Software</h1>
+    <p id="description"> Please fill out the form below to proceed
+    </p>
+
+
+  <div class="main-content">
+<div class="form-content">
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text"required placeholder="enter your name"/>
+        <label for="birth" id="birth-label">Date Of Birth</label>
+        <input id="birth" type="text" required placeholder="enter your date of birth"/>
+        <label for="number" id="number-label">Phone Number</label>
+        <input id="number" type="number" required placeholder="enter your phone number"/>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="text"required placeholder="enter your email adress"/>
+
+        <label for="gender">Please select your Gender</label>
+        <select id="gender">
+            <option value="select"> Select> </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="custom">Custom</option>
+            <option value="rather not say">Rather not say</option>
+            </select>
+
+            <fieldset>
+                <legend>How did you hear about Us?</legend>
+                <input type="checkbox" name="hear" id="social" value="social media"/>
+                <label for="social media">Social Media</label>
+                <input type="checkbox" name="hear" id="search" value="search"/>
+                <label for="search">Search</label>
+                <input type="checkbox" name="hear" id="friend" value="friend"/>
+                <label for="friend">Friend</label></fieldset>
+
+                <label for="comment">Please leave your comment here</label>
+                <textarea rows="5" cols="50" id="comment">comment here...</textarea>
+
+               <a href="https://bit.ly/364GdeD" target="blank">
+                <button type="submit" id="submit">CLAIM NOW</button></a>
+
+
+    </form>
+</div>
+  </div>  
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
